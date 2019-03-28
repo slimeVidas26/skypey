@@ -3,7 +3,7 @@ import './Main.css'
 
 const Main = () =>{
   return (
-    <main className = "Main">Main stuff</main>
+    <main className = "Main"><h1>Main stuff</h1></main>
   )
 }
 
