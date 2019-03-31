@@ -1,3 +1,7 @@
-export default (state , action)=>{
+import {contacts} from '../static-data'
+
+
+
+export default (state = {contacts} , action)=>{
     return state;
 }
