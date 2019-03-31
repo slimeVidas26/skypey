@@ -1,17 +1,20 @@
-import React, {Component} from 'react';
+import React from 'react';
 import './App.css';
 import Sidebar from './Sidebar'
+import store from './store'
 import Main from './Main'
+import _ from 'lodash'
 
-class App extends Component {
-    render() {
+const App  = () =>{
+    const {contacts} = store.getState()
+    
         return (
             <div className="App">
-                <Sidebar/>
+                <Sidebar contacts = {_.values(contacts)}/>
                 <Main/>
             </div>
         );
-    }
+    
 }
 
 export default App;
