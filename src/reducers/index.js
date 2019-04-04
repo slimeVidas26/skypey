@@ -7,9 +7,9 @@ import {combineReducers} from 'redux'
  const allReducer =  combineReducers({
     user:user,
     contacts:contacts,
-    activeUserId: activeUserId
+    activeUserId:activeUserId
 })
 
-//console.log(allReducer)
+
 
 export default allReducer
