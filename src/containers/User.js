@@ -5,6 +5,7 @@ import setActiveUserId from '../actions'
 
 const User = ({user}) =>{
     const { name, profile_pic, status } = user;
+    console.log(user)
   return (
     <div className = "User" onClick = {handleUserClick.bind(null,user)}>
     <img src={profile_pic} alt={name} className="User__pic" />
@@ -16,9 +17,9 @@ const User = ({user}) =>{
   )
 }
 
-var handleUserClick = ({user_id})=>{
+ function handleUserClick({user_id}){
   console.log(user_id)
-  store.dispatch(setActiveUserId(user_id))
+  store.dispatch(setActiveUserId(user_id));
 }
 
 
