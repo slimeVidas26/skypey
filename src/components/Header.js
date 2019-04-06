@@ -8,7 +8,7 @@ const Header = ({user})=> {
   return (
     <header className = "Header">
       <h1 className = "Header__name">{name}</h1>
-      <p classname = "Header__status">{status}</p>
+      <p className = "Header__status">{status}</p>
     </header>
   )
 }

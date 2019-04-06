@@ -5,7 +5,7 @@ import setActiveUserId from '../actions'
 
 const User = ({user}) =>{
     const { name, profile_pic, status } = user;
-    console.log(user)
+    //console.log(user)
   return (
     <div className = "User" onClick = {handleUserClick.bind(null,user)}>
     <img src={profile_pic} alt={name} className="User__pic" />
