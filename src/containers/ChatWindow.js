@@ -2,6 +2,7 @@ import React from "react";
 import store from '../store'
 import Header from '../components/Header'
 import Chats from '../components/Chats'
+import MessageInput from './MessageInput'
 import _ from 'lodash'
 
 const ChatWindow = ({ activeUserId }) => {
@@ -13,11 +14,15 @@ const ChatWindow = ({ activeUserId }) => {
   console.log("activeUser" , activeUser);
 
   const activeMessages = state.messages[activeUserId]
+  const {typing} = state
+  console.log("typing" , {typing})
 
   return (
     <div className="ChatWindow">
       <Header user = {activeUser} />
       <Chats messages = {_.values(activeMessages)} />
+      <MessageInput value = {typing} />
+
       </div>
   );
 };

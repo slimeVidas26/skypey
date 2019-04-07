@@ -1,7 +1,7 @@
 import React from 'react'
 import "./User.css"
 import store from '../store'
-import setActiveUserId from '../actions'
+import {setActiveUserId} from '../actions'
 
 const User = ({user}) =>{
     const { name, profile_pic, status } = user;
