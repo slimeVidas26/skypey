@@ -3,9 +3,11 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 85%;
+    width: 100%;
     margin: 0 auto;
     overflow-y: scroll;
+    height:76vh;
+    
   }
   .Chat {
     margin: 1rem 0;
