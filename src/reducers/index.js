@@ -3,7 +3,7 @@ import user from './user'
 import messages from './messages'
 import contacts from './contacts'
 import activeUserId from './activeUserId'
-import typing from "./typing"
+import typingFunc from "./typing"
 import {combineReducers} from 'redux'
 
  const allReducer =  combineReducers({
@@ -11,7 +11,8 @@ import {combineReducers} from 'redux'
     contacts:contacts,
     activeUserId:activeUserId,
     messages:messages,
-    typing:typing
+    typing:typingFunc
+    
 })
 
 

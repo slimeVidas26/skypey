@@ -8,9 +8,12 @@ import {
     payload:id
 })
 
-export const setTypingValue = value =>({
+
+
+
+export const setTypingValue = (value) =>({
     type:SET_TYPING_VALUE,
-    payload:value
+    payload:value 
 })
 
 

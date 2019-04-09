@@ -5,6 +5,7 @@ import './MessageInput.css'
 
 
 const MessageInput = ({value}) =>{
+  
 
     const handleChange = (e)=>{
      store.dispatch(setTypingValue(e.target.value))

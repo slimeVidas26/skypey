@@ -1,6 +1,17 @@
 import {SET_TYPING_VALUE} from '../types/action-types'
 
-export default function typing(state = "" , action){
+const initialState = {
+    firstName:"John",
+    lastName:"doe",
+    adress:{
+        floor: 4,
+        street:"Madison Avenue"
+    }
+}
+
+
+
+export default function typingFunc(state ="" , action){
     switch (action.type) {
         case SET_TYPING_VALUE:
         return action.payload

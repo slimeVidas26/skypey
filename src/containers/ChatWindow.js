@@ -14,8 +14,11 @@ const ChatWindow = ({ activeUserId }) => {
   console.log("activeUser" , activeUser);
 
   const activeMessages = state.messages[activeUserId]
+  
+  //ALIAS OF THE REDUCER - typing:typingFunc
   const {typing} = state
   console.log("typing" , {typing})
+
 
   return (
     <div className="ChatWindow">
