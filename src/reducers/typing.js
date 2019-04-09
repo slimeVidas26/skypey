@@ -1,13 +1,13 @@
 import {SET_TYPING_VALUE} from '../types/action-types'
 
-const initialState = {
-    firstName:"John",
-    lastName:"doe",
-    adress:{
-        floor: 4,
-        street:"Madison Avenue"
-    }
-}
+// const initialState = {
+//     firstName:"John",
+//     lastName:"doe",
+//     adress:{
+//         floor: 4,
+//         street:"Madison Avenue"
+//     }
+// }
 
 
 
